@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+}
+
+.choice {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+    .choice__button{
+        padding: 2em;
+        font-size: x-large;
+    }
+    .choice__button--selected{
+        background-color: yellow;
+    }
+
+    .choice__button--wrong{
+        background-color: red;
+    }
+    
+    .choice__button--switch{
+        background-color: green;
+    }
+}
+
+.display{
+    margin: 2em auto;
+    text-align: center;
+    padding: 2em;
+    width: 30%;
+    background-color: green;
+}
+
+.auto{
+    width: 50%;
+    margin: 2em auto;
+    padding: 2em 0;
+    outline: solid black 1px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Monty Hall Game</title>
+</head>
+<body>
+    <div class="choice" id="choice">
+        <button class="choice__button" id="1">1</button>
+        <button class="choice__button" id="2">2</button>
+        <button class="choice__button" id="3">3</button>
+    </div>
+    <div class="display">
+        <span class="display__text">Results here</span>
+    </div>
+    <form class="auto">
+        <select name="auto__select" id="auto__select">
+            <option value="stay">stay</option>
+            <option value="change">change</option>
+        </select>
+        <label for="auto__input">
+            <span>Number of tries</span>
+            <input type="number" value="1" name="auto__input">
+        </label>
+        <button class="auto__button">GO</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
