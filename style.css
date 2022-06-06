@@ -1,32 +1,29 @@
 html,
 body {
   margin: 0;
+  font-size: 1.3em;
+}
+
+h1, h2, p {
+  text-align: center;
 }
 
 .choice {
   margin-top: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 2em;
 }
-
 .choice .choice__button {
   padding: 2em;
   font-size: x-large;
 }
-
 .choice .choice__button--selected {
   background-color: yellow;
 }
-
 .choice .choice__button--wrong {
   background-color: red;
 }
-
 .choice .choice__button--switch {
   background-color: green;
 }
@@ -34,22 +31,29 @@ body {
 .display {
   margin: 2em auto;
   text-align: center;
-  padding: 2em;
+  padding: 1em;
   width: 30%;
   background-color: green;
 }
 
 .auto {
-  width: 50%;
-  margin: 2em auto;
-  padding: 2em 0;
-  outline: solid black 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: 0 auto;
+  width: 300px;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 2em;
+  align-items: center;
 }
-/*# sourceMappingURL=style.css.map */
+.auto .auto__select {
+  height: 2em;
+}
+.auto .auto__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.auto .auto__label .auto__input {
+  width: 50%;
+}
+.auto .auto__button {
+  width: 100%;
+  margin: 0.25em 0;
+}/*# sourceMappingURL=style.css.map */

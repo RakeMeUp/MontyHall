@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,43 @@
     <link rel="stylesheet" href="style.css">
     <title>Monty Hall Game</title>
 </head>
+
 <body>
+    <h1>Monty Hall Game</h1>
+    <p>Select a button, then choose to stay or switch buttons</p>
     <div class="choice" id="choice">
         <button class="choice__button" id="1">1</button>
         <button class="choice__button" id="2">2</button>
         <button class="choice__button" id="3">3</button>
     </div>
     <div class="display">
-        <span class="display__text">Results here</span>
+        <div class="display__text">
+            Wins: <span class="display__wins">0</span>
+        </div>
+        <div class="display__text">
+            Loses: <span class="display__loses">0</span>
+        </div>
+        <div>
+            Win Rate: <span class="display__percentage">0</span>%
+        </div>
     </div>
+    <h2>Automated Playing</h2>
     <form class="auto">
-        <select name="auto__select" id="auto__select">
+        <select name="auto__select" class="auto__select">
             <option value="stay">stay</option>
             <option value="change">change</option>
         </select>
-        <label for="auto__input">
-            <span>Number of tries</span>
-            <input type="number" value="1" name="auto__input">
+        <label class="auto__label">
+            Number of tries
+            <input type="number" value="1" class="auto__input">
         </label>
-        <button class="auto__button">GO</button>
+        <div class="auto__buttons">
+            <button class="auto__button auto__button--start">GO</button>
+            <button class="auto__button auto__button--reset">Reset</button>
+        </div>
     </form>
 
     <script src="app.js"></script>
 </body>
+
 </html>

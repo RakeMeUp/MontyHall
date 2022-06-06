@@ -1,6 +1,11 @@
 html,
 body {
     margin: 0;
+    font-size: 1.3em;
+}
+
+h1, h2, p{
+    text-align: center;
 }
 
 .choice {
@@ -29,17 +34,34 @@ body {
 .display{
     margin: 2em auto;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     width: 30%;
     background-color: green;
 }
 
 .auto{
-    width: 50%;
-    margin: 2em auto;
-    padding: 2em 0;
-    outline: solid black 1px;
+    margin: 0 auto;
+    width: 300px;
     display: flex;
-    justify-content: center;
-    gap: 2em;
+    align-items: center;
+
+    .auto__select{
+        height: 2em;
+    }
+
+    .auto__label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .auto__input{
+            width: 50%;
+        }
+
+    }
+
+    .auto__button{
+        width: 100%;
+        margin: 0.25em 0;
+    }
 }
