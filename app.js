@@ -3,7 +3,7 @@ const winDisplay = document.querySelector(".display__wins");
 const loseDisplay = document.querySelector(".display__loses");
 const automateBtn = document.querySelector('.auto__button--start')
 const resetBtn = document.querySelector('.auto__button--reset')
-const select = document.querySelector("#auto__select")
+const select = document.querySelector(".auto__select")
 const input = document.querySelector(".auto__input")
 const percentage = document.querySelector(".display__percentage")
 
@@ -45,6 +45,7 @@ select.addEventListener("change", e=>{
 })
 
 input.addEventListener("change", e=>{
+    console.log("yoo")
     inputValue = e.target.value
 })
 
