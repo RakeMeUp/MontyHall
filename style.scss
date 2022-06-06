@@ -1,7 +1,10 @@
 html,
 body {
     margin: 0;
-    font-size: 1.3em;
+}
+
+*{
+    font-size: x-large;
 }
 
 h1, h2, p{
@@ -16,7 +19,7 @@ h1, h2, p{
 
     .choice__button{
         padding: 2em;
-        font-size: x-large;
+        font-size: 1.5em
     }
     .choice__button--selected{
         background-color: yellow;
@@ -41,9 +44,11 @@ h1, h2, p{
 
 .auto{
     margin: 0 auto;
-    width: 300px;
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 1em;
 
     .auto__select{
         height: 2em;
@@ -53,10 +58,6 @@ h1, h2, p{
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        .auto__input{
-            width: 50%;
-        }
 
     }
 
