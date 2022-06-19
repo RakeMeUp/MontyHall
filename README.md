@@ -1,3 +1,7 @@
-# MontyHall
+# Monty Hall Game
 
-https://delightful-twilight-e02dba.netlify.app/
+Based on a brain teaser named Monty Hall Problem, in the form of a probability puzzle.
+
+## Tech
+
+- VanillaJS + SASS
